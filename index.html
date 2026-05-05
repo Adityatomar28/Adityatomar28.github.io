@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Aditya Tomar, portfolio, Aditya, full stack dev, personal portfolio, portfolio design, portfolio website"
+    />
+    <meta
+      name="description"
+      content="Welcome to Aditya Portfolio. Full-Stack Web Developer and Gen-Ai"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-png"
+    />
+    <title>Portfolio | Aditya Singh Tomar</title>
+  </head>
+
+  <body oncontextmenu="return false;">
+    <!-- custom cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- pre loader -->
+    <div class="loader-container" id="loader-container">
+      <div class="loader-content">
+        <div class="loader-line1">Booting up Aditya's portfolio...</div>
+        <div class="loader-line2">Turning coffee into code...</div>
+        <div class="loader-line3">
+          Welcome • स्वागत • வணக்கம் • నమస్తే • ಸ್ವಾಗత • സ്വാഗതം
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar starts -->
+    <header>
+      <a href="/" class="logo"><i class="fab fa-node-js"></i> Aditya</a>
+
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- hero section starts -->
+    <section class="home" id="home">
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm Aditya Singh<span>Tomar</span>
+        </h2>
+        <p>i am into <span class="typing-text"></span></p>
+        <a href="#about" class="btn"
+          ><span>About Me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/aditya-singh-tomar-1683a3279/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/Adityatomar28"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          draggable="false"
+          class="tilt"
+          src="./assets/images/hero.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- hero section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
+
+      <div class="row">
+        <!-- Left Side: Terminal Cards -->
+        <div class="terminal-container">
+          <div class="terminal-card tilt">
+            <span class="command">git_status</span>
+            <span class="answer">Always building something</span>
+          </div>
+          <div class="terminal-card tilt">
+            <span class="command">what_do_you_build</span>
+            <span class="answer">Scalable MERN apps + exploring GenAI</span>
+          </div>
+          <div class="terminal-card tilt">
+            <span class="command">strengths</span>
+            <span class="answer">Fast learner, problem solver</span>
+          </div>
+          <div class="terminal-card tilt">
+            <span class="command">current_focus</span>
+            <span class="answer">Backend + LLM + RAG</span>
+          </div>
+          <div class="terminal-card tilt">
+            <span class="command">fun_mode</span>
+            <span class="answer">Coding with music 🎧</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Professional Text -->
+        <div class="content">
+          <h3>I'm Aditya Singh Tomar</h3>
+          <span class="tag">Full Stack Developer & GenAI</span>
+
+          <p>
+            I’m a 3rd-year B.Tech CSE student at Bennett University with a
+            strong passion for software development. I specialize in building
+            robust web applications using the MERN stack and am actively
+            exploring the potential of Generative AI, LLMs, and RAG-based
+            systems to create intelligent digital products.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="details">
+                <span>Email:</span>
+                <p>adityasinghtomar52@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="details">
+                <span>Place:</span>
+                <p>Greater Noida, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resumebtn">
+            <a
+              href="https://drive.google.com/file/d/11upWVpITqBZh71me3ZZTz-SjgJ4AMPjn/view?usp=sharing"
+              target="_blank"
+              class="btn"
+              ><span>Resume</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+      <h2 class="heading">
+        <i class="fas fa-laptop-code"></i> Tech <span>Stack</span>
+      </h2>
+
+      <div class="container tech-container">
+        <div class="row" id="skillsContainer"></div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+      <h1 class="heading">
+        <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+      </h1>
+
+      <p class="qoute">
+        Education is not the learning of facts, but the training of the mind to
+        think.
+      </p>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              draggable="false"
+              src="./assets/images/educat/Bu.web.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Bachelor of Technology in Computer Science Engineering</h3>
+            <p>Bennett University</p>
+            <h4>2023 - 2027 | Pursuing</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education section ends -->
+
+    <!-- work project section starts -->
+    <section class="work" id="work">
+      <h2 class="heading">
+        <i class="fas fa-laptop-code"></i> Projects <span>Made</span>
+      </h2>
+
+      <div class="box-container"></div>
+
+      <div class="viewall">
+        <a href="/projects" class="btn"
+          ><span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- work project section ends -->
+
+    <!-- achievements section starts -->
+    <section class="achievements" id="achievements">
+      <h2 class="heading">
+        <i class="fas fa-trophy"></i> My <span>Achievements</span>
+      </h2>
+
+      <div class="timeline">
+        <!-- 1. LeetCode Animated Section -->
+        <div class="achievements-container">
+          <!-- Left Side: Problems Solved -->
+          <div class="achievements-left tilt">
+            <div class="content">
+              <h3>Problems Solved</h3>
+              <div class="counter" data-target="543">0</div>
+              <p>
+                Solved 540+ DSA problems on LeetCode focusing on Data
+                Structures, Algorithms, and Backend Systems.
+              </p>
+              <a
+                href="https://leetcode.com/u/A_S_02/"
+                target="_blank"
+                class="stylish-btn"
+              >
+                <span>LeetCode Profile</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Progress Indicators -->
+          <div class="achievements-right">
+            <div class="progress-box">
+              <div class="progress-info">
+                <span class="level easy">Easy</span>
+                <span class="count">214</span>
+              </div>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar easy-bar" data-width="39.4%"></div>
+              </div>
+            </div>
+
+            <div class="progress-box">
+              <div class="progress-info">
+                <span class="level medium">Medium</span>
+                <span class="count">274</span>
+              </div>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar medium-bar" data-width="50.4%"></div>
+              </div>
+            </div>
+
+            <div class="progress-box">
+              <div class="progress-info">
+                <span class="level hard">Hard</span>
+                <span class="count">55</span>
+              </div>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar hard-bar" data-width="10.2%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Hackathon -->
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>Smart BU Hackathon 2025</h2>
+            </div>
+            <div class="desc">
+              <h3>Ranked 48th among 600+ teams</h3>
+              <p>Competitive coding & product development hackathon.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. CodeChef -->
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h2>CodeChef</h2>
+            </div>
+            <div class="desc">
+              <h3>3 Star Rating</h3>
+              <p>Competitive Programming</p>
+              <a
+                href="https://www.codechef.com/users/yoke_coral_27"
+                target="_blank"
+                class="stylish-btn"
+                style="margin-top: 1.5rem"
+              >
+                <span>View Profile</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- achievements section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+        <i class="fas fa-headset"></i> Get in <span>Touch</span>
+      </h2>
+
+      <div class="container">
+        <div class="content">
+          <div class="image-box">
+            <img draggable="false" src="./assets/images/contact1.png" alt="" />
+          </div>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xlgzdwdk"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="form-group">
+              <div class="field">
+                <input type="text" name="name" placeholder="Name" required />
+                <i class="fas fa-user"></i>
+              </div>
+
+              <div class="field">
+                <input type="email" name="email" placeholder="Email" required />
+                <i class="fas fa-envelope"></i>
+              </div>
+
+              <div class="field">
+                <input type="text" name="phone" placeholder="Phone" />
+                <i class="fas fa-phone-alt"></i>
+              </div>
+
+              <div class="message">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+                <i class="fas fa-comment-dots"></i>
+              </div>
+            </div>
+
+            <div class="button-area">
+              <button type="submit">
+                Submit <i class="fa fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <p id="form-status" style="display: none; margin-top: 10px"></p>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Aditya's Portfolio</h3>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials. <br />
+            <br />Let’s connect and build something amazing 🚀
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"
+            ><i class="fas fa-chevron-circle-right"></i> skills</a
+          >
+          <a href="#education"
+            ><i class="fas fa-chevron-circle-right"></i> education</a
+          >
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#achievements"
+            ><i class="fas fa-chevron-circle-right"></i> achievements</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-envelope"></i>adityasinghtomar52@gmail.com</p>
+          <p>
+            <i class="fas fa-map-marked-alt"></i>Based in Greater Noida, India
+          </p>
+          <div class="share">
+            <a
+              href="https://www.linkedin.com/in/aditya-singh-tomar-1683a3279/"
+              class="fab fa-linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/Adityatomar28"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:adityasinghtomar52@gmail.com"
+              class="fas fa-envelope"
+              aria-label="Mail"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.linkedin.com/in/aditya-singh-tomar-1683a3279/"
+          >Aditya Singh Tomar</a
+        >
+      </h1>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- scroll top btn -->
+    <a
+      href="#home"
+      aria-label="ScrollTop"
+      class="fas fa-angle-up"
+      id="scroll-top"
+    ></a>
+    <!-- scroll back to top -->
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- typed.js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- particle.js links -->
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!-- vanilla tilt.js links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

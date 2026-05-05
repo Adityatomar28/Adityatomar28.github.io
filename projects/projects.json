@@ -1,0 +1,49 @@
+[
+  {
+    "name": "ContextAI (RAG System)",
+    "desc": "A GenAI application that processes PDFs into vector embeddings and enables context-aware question answering using LLMs and RAG. Built using FastAPI, LangChain, and ChromaDB.",
+    "image": "context",
+    "category": "ai",
+    "links": {
+      "view": "https://context-ai-7pez.vercel.app/",
+      "code": "https://github.com/Adityatomar28/ContextAI"
+    }
+  },
+  {
+    "name": "NextHire AI",
+    "desc": "An AI-powered system that analyzes resumes, detects skill gaps, and generates personalized interview questions and ATS-optimized resumes using LLMs.",
+    "image": "Nexthire",
+    "category": "ai",
+    "links": {
+      "code": "https://github.com/Adityatomar28/NextHire-AI"
+    }
+  },
+  {
+    "name": "LMS Backend System",
+    "desc": "A scalable backend system with authentication, course management, and payment integration using Node.js, Express, MongoDB, JWT, and REST APIs.",
+    "image": "lms_backend",
+    "category": "backend",
+    "links": {
+      "code": "https://github.com/Adityatomar28/edu-platform"
+    }
+  },
+  {
+    "name": "CareSync (Healthcare Platform)",
+    "desc": "A full-stack healthcare platform for patients and doctors with real-time dashboards, appointment scheduling, and AI-powered health insights.",
+    "image": "care",
+    "category": "fullstack",
+    "links": {
+      "code": "https://github.com/Adityatomar28/CareSync"
+    }
+  },
+  {
+    "name": "TeamSync (Project Management)",
+    "desc": "A comprehensive team and project management system with role-based access, real-time dashboards, and task tracking. Built with React, Tailwind CSS, and Node.js.",
+    "image": "teamsync",
+    "category": "fullstack",
+    "links": {
+      "view": "https://intelligent-nurturing-production.up.railway.app/",
+      "code": "https://github.com/Adityatomar28/Team-Task-Manager"
+    }
+  }
+]
