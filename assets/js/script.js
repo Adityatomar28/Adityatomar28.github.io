@@ -387,46 +387,87 @@ if (cursorDot && cursorOutline) {
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault(); // stop redirect
+if (form) {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // stop redirect
 
-  const data = new FormData(form);
-  const btn = form.querySelector('button[type="submit"]');
-  const originalBtnText = btn.innerHTML;
+    const data = new FormData(form);
+    const btn = form.querySelector('button[type="submit"]');
+    const originalBtnText = btn.innerHTML;
 
-  btn.innerHTML = "Sending... <i class='fa fa-spinner fa-spin'></i>";
+    btn.innerHTML = "Sending... <i class='fa fa-spinner fa-spin'></i>";
 
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    });
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
-    if (response.ok) {
-      btn.innerHTML = "Sent! <i class='fa fa-check-circle'></i>";
-      btn.style.background = "#059669";
-      setTimeout(() => {
-        btn.innerHTML = originalBtnText;
-        btn.style.background = "";
-      }, 3000);
-      form.reset();
-    } else {
-      btn.innerHTML = "Failed <i class='fa fa-times-circle'></i>";
+      if (response.ok) {
+        btn.innerHTML = "Sent! <i class='fa fa-check-circle'></i>";
+        btn.style.background = "#059669";
+        setTimeout(() => {
+          btn.innerHTML = originalBtnText;
+          btn.style.background = "";
+        }, 3000);
+        form.reset();
+      } else {
+        btn.innerHTML = "Failed <i class='fa fa-times-circle'></i>";
+        btn.style.background = "#dc2626";
+        setTimeout(() => {
+          btn.innerHTML = originalBtnText;
+          btn.style.background = "";
+        }, 3000);
+      }
+    } catch (error) {
+      btn.innerHTML = "Error <i class='fa fa-exclamation-triangle'></i>";
       btn.style.background = "#dc2626";
       setTimeout(() => {
         btn.innerHTML = originalBtnText;
         btn.style.background = "";
       }, 3000);
     }
-  } catch (error) {
-    btn.innerHTML = "Error <i class='fa fa-exclamation-triangle'></i>";
-    btn.style.background = "#dc2626";
-    setTimeout(() => {
-      btn.innerHTML = originalBtnText;
-      btn.style.background = "";
-    }, 3000);
+  });
+}
+
+// Resume Modal Functionality
+
+document.addEventListener("DOMContentLoaded", () => {
+  const resumeModal = document.getElementById("resume-modal");
+  const resumeBtn = document.getElementById("resume-preview-btn");
+  const closeResume = document.querySelector(".close-modal");
+
+  if (resumeBtn && resumeModal) {
+    resumeBtn.addEventListener("click", () => {
+      resumeModal.style.display = "block";
+      setTimeout(() => {
+        resumeModal.classList.add("show");
+      }, 10);
+      document.body.style.overflow = "hidden";
+    });
   }
+
+  if (closeResume && resumeModal) {
+    closeResume.addEventListener("click", () => {
+      resumeModal.classList.remove("show");
+      setTimeout(() => {
+        resumeModal.style.display = "none";
+      }, 300);
+      document.body.style.overflow = "auto";
+    });
+  }
+
+  // Close on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === resumeModal) {
+      resumeModal.classList.remove("show");
+      setTimeout(() => {
+        resumeModal.style.display = "none";
+      }, 300);
+      document.body.style.overflow = "auto";
+    }
+  });
 });
